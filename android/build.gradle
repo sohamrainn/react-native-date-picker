@@ -16,7 +16,9 @@ android {
     namespace 'com.henninghall.date_picker'
     compileSdkVersion safeExtGet('compileSdkVersion', 34)
     buildToolsVersion safeExtGet('buildToolsVersion', "34.0.0")
-
+ buildFeatures {
+        buildConfig true
+    }
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 21)
         targetSdkVersion safeExtGet('targetSdkVersion', 34)
